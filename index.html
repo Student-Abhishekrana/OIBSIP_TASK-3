@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="main">
+        <h1>Temperature converter</h1>
+        <hr>
+
+        <div class="content">
+
+            <div>
+                <span>
+                    Type :
+                </span>
+                <select id="conversionType">
+                    <option value="CtoF">Celsius</option>
+                    <option value="FtoC">Fahrenheit</option>
+                </select>
+            </div>
+    
+            <div class="condition">
+                <div>
+                    <span>
+                        Degree :
+                    </span>
+                    <input type="number" id="tempInput">
+                </div>
+    
+            </div>
+        </div>
+
+        <button onclick="convertTemp()">Convert</button>
+        
+        <p id="result"></p>
+
+        </p>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
